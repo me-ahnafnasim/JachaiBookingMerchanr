@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const BookingMerchantFlightFare = () => {
   return (
-    <div className="relative bg-whitesmoke w-full h-[177.61rem] overflow-hidden text-left text-[0.78rem] text-a2a2a font-reg">
-      The header
+  <div className="relative bg-whitesmoke w-full h-[177.61rem] overflow-hidden text-left text-[0.78rem] text-a2a2a font-reg">
+      
       <img
         className="absolute top-[0rem] right-[0rem] w-[106.67rem] h-[6.89rem]"
         alt=""
@@ -14,12 +15,14 @@ const BookingMerchantFlightFare = () => {
         alt=""
         src="/untitled1-2@2x.png"
       />
+
+      {/* nav start here */}
       <div className="absolute top-[6.17rem] left-[0rem] bg-ffffff w-[106.67rem] h-[3.89rem]" />
-      <div className="absolute top-[7.44rem] left-[16.87rem] w-[3.68rem] h-[1.37rem] text-e94">
+      <div className="absolute top-[7.44rem] left-[16.87rem] w-[3.68rem] h-[1.37rem] hover:text-e94">
         <div className="absolute top-[0rem] left-[0rem] w-[3.68rem] h-[1.37rem]">
-          <a className="[text-decoration:none] absolute top-[0.16rem] left-[1.67rem] font-bold text-[inherit]">
-            Flight
-          </a>
+          <Link className="[text-decoration:none] hover:text-e94 absolute top-[0.16rem] left-[1.67rem] font-bold text-[inherit]">
+            Flight   
+          </Link>
           <img
             className="absolute h-[65.7%] w-[26.44%] top-[18.9%] right-[68.61%] bottom-[15.4%] left-[4.95%] max-w-full overflow-hidden max-h-full"
             alt=""
@@ -27,21 +30,21 @@ const BookingMerchantFlightFare = () => {
           />
         </div>
       </div>
-      <div className="absolute top-[7.59rem] left-[23.25rem] w-[3.56rem] h-[1.06rem]">
-        <a className="[text-decoration:none] absolute top-[0rem] left-[1.56rem] font-bold text-[inherit]">
+      <div  className="absolute top-[7.59rem] left-[23.25rem] w-[3.56rem] h-[1.06rem]">
+        <Link className="[text-decoration:none] absolute top-[0rem] hover:text-e94 left-[1.56rem] font-bold text-[inherit]">
           Stays
-        </a>
+        </Link>
         <img
-          className="absolute top-[0.03rem] left-[0rem] w-[1rem] h-[1rem] overflow-hidden"
+          className="   absolute top-[0.03rem] left-[0rem] w-[1rem] h-[1rem] overflow-hidden"
           alt=""
           src="/building.svg"
         />
       </div>
       <div className="absolute top-[7.59rem] left-[35.72rem] w-[2.83rem] h-[1.06rem]">
         <div className="absolute top-[0rem] left-[0rem] w-[2.83rem] h-[1.06rem]">
-          <a className="[text-decoration:none] absolute top-[0rem] left-[1.5rem] font-bold text-[inherit]">
+          <Link className="hover:text-e94 [text-decoration:none] absolute top-[0rem] left-[1.5rem] font-bold text-[inherit]">
             Bus
-          </a>
+          </Link>
           <img
             className="absolute top-[0.03rem] left-[0rem] w-[1rem] h-[1rem] overflow-hidden"
             alt=""
@@ -49,10 +52,10 @@ const BookingMerchantFlightFare = () => {
           />
         </div>
       </div>
-      <div className="absolute top-[7.53rem] left-[41.33rem] w-[5.78rem] h-[1.17rem]">
-        <a className="[text-decoration:none] absolute top-[0rem] left-[1.83rem] font-bold text-[inherit]">
+      <div className="absolute top-[7.53rem] left-[41.33rem] w-[8rem] h-[1.17rem]">
+        <Link className="hover:text-e94 [text-decoration:none] absolute top-[0rem] left-[1.83rem] font-bold text-[inherit]">
           Car Rentals
-        </a>
+        </Link>
         <img
           className="absolute top-[0.06rem] left-[0rem] w-[1.11rem] h-[1.11rem] overflow-hidden"
           alt=""
@@ -60,11 +63,16 @@ const BookingMerchantFlightFare = () => {
         />
       </div>
       <div className="absolute top-[7.59rem] left-[29.58rem] w-[3.36rem] h-[1.06rem]">
+
+      {/* <div className="box-border w-[4.42rem] h-[0.17rem] border-t-[3px] hover:border-solid hover:border-e94"/>
+              */}
         <div className="absolute top-[0rem] left-[0rem] w-[3.36rem] h-[1.06rem]">
-          <a className="[text-decoration:none] absolute top-[0rem] left-[1.81rem] font-bold text-[inherit]">
-            Tour
-          </a>
-          <img
+         
+            
+             <Link className=" hover:text-e94 [text-decoration:none] absolute top-[0rem] left-[1.81rem] font-bold text-[inherit]">
+           Tour
+          </Link>
+            <img
             className="absolute h-[94.74%] w-[38.25%] top-[2.63%] right-[61.75%] bottom-[2.63%] left-[0%] max-w-full overflow-hidden max-h-full"
             alt=""
             src="/group-7262.svg"
@@ -73,9 +81,9 @@ const BookingMerchantFlightFare = () => {
       </div>
       <div className="absolute top-[7.56rem] left-[49.89rem] w-[3.28rem] h-[1.11rem]">
         <div className="absolute top-[0rem] left-[1.56rem] w-[1.72rem] h-[1.06rem]">
-          <a className="[text-decoration:none] absolute top-[0rem] left-[0rem] font-bold text-[inherit]">
+          <Link className=" hover:text-e94 [text-decoration:none] absolute top-[0rem] left-[0rem] font-bold text-[inherit]">
             Train
-          </a>
+          </Link>
         </div>
         <img
           className="absolute h-full w-[26.77%] top-[0%] right-[73.23%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full"
@@ -117,6 +125,10 @@ const BookingMerchantFlightFare = () => {
           src="/notificationbell.svg"
         />
       </div>
+
+      {/* header code end here */}
+
+      {/* sidebar code start from here */}
       <div className="absolute top-[6.17rem] left-[0rem] bg-ffffff w-[14.44rem] h-[129.66rem] opacity-[0.75]" />
       <button className="cursor-pointer [border:none] p-0 bg-f4ecce absolute top-[12.85rem] left-[0rem] w-[14.44rem] h-[2rem] opacity-[0.8]" />
       <b className="absolute top-[11.02rem] left-[1.89rem]">MAIN NAVIGATION</b>
@@ -132,6 +144,11 @@ const BookingMerchantFlightFare = () => {
         <div className="absolute top-[0rem] left-[0.64rem]">Online</div>
         <div className="absolute top-[0.4rem] left-[0rem] rounded-[50%] bg-ac11 w-[0.39rem] h-[0.39rem]" />
       </div>
+
+      {/* nav end here */}
+
+     {/* header code start from here */}
+
       <div className="absolute top-[0.73rem] right-[1.67rem] w-[99.72rem] h-[1.11rem] text-[0.67rem]">
         <div className="absolute top-[0rem] right-[85.83rem] w-[13.89rem] h-[1.11rem]">
           <div className="absolute top-[0rem] right-[0rem] w-[13.89rem] h-[1.11rem]">
@@ -210,10 +227,14 @@ const BookingMerchantFlightFare = () => {
         alt=""
         src="/mask-group1.svg"
       />
+
+
+      {/* main part-1 start from here*/}
+
       <div className="absolute top-[10.75rem] left-[16.11rem] rounded-8xs bg-ffffff w-[74.48rem] h-[16.67rem]" />
       <div className="absolute top-[25.89rem] left-[45.83rem] w-[10.28rem] h-[3.06rem] text-[1.33rem] text-ffffff font-text-14-reg">
         <button className="cursor-pointer [border:none] p-0 bg-bar-color absolute top-[0rem] left-[0rem] rounded-[39px] shadow-[0px_4px_4px_rgba(0,_0,_0,_0.25)] w-[10.28rem] h-[3.06rem]" />
-        <div className="absolute top-[0.72rem] left-[2.83rem] font-semibold">
+        <div className=" transition duration-500 hover:scale-125 absolute top-[0.72rem] left-[2.83rem] font-semibold">
           Search
         </div>
       </div>
@@ -221,21 +242,24 @@ const BookingMerchantFlightFare = () => {
         <div className="absolute top-[0rem] left-[0rem] inline-block w-[2.27rem]">
           From
         </div>
+
+
         <div className="absolute top-[1.33rem] left-[0rem] w-[15.19rem] h-[3.06rem]">
           <b className="absolute top-[0.39rem] left-[1.16rem] inline-block w-[2.68rem]">
             Dubai
           </b>
           <div className="absolute top-[1.5rem] left-[1.16rem] text-[0.67rem] text-d6e70 inline-block w-[9.6rem]">
-            DXB, Dubai International Airport
+            
           </div>
           <input
             className="bg-[transparent] absolute top-[0rem] left-[0rem] rounded-8xs box-border w-[15.19rem] h-[3.06rem] border-[1px] border-solid border-d6e701"
-            type="text"
+            type="search" placeholder="DXB, Dubai International Airport"
             autoFocus
           />
         </div>
-      </div>
-      <div className="absolute top-[14.63rem] left-[37.13rem] w-[15.13rem] h-[4.39rem]">
+   </div>
+
+      <div className="absolute top-[14.63rem] left-[37.13rem] w-[15.19rem] h-[4.39rem]">
         <div className="absolute top-[0rem] left-[0rem] inline-block w-[1.11rem]">
           To
         </div>
@@ -244,36 +268,27 @@ const BookingMerchantFlightFare = () => {
             Anywhere
           </b>
           <div className="absolute top-[1.5rem] left-[1.19rem] text-[0.67rem] text-d6e70 inline-block w-[12.34rem]">
-            Search for trips to anywhere in the world
+          
           </div>
           <input
-            className="bg-[transparent] absolute top-[0rem] left-[0rem] rounded-8xs box-border w-[15.13rem] h-[3.06rem] border-[1px] border-solid border-d6e701"
+            className=" top-[0rem] left-[0rem]w-[15.13rem] w-[15.20rem]  bg-[transparent] absolute  rounded-8xs box-border  h-[3.06rem] border-[1px] border-solid border-d6e701"
             type="search"
-            placeholder="Anywhere"
+            placeholder="Search for trips to anywhere in the world"
           />
-        </div>
+        </div>     
       </div>
       <div className="absolute top-[14.63rem] left-[61.5rem] w-[7.02rem] h-[4.39rem]">
-        <b className="absolute top-[2.28rem] left-[2.3rem] inline-block w-[3.08rem]">
-          Return
-        </b>
+  
+          <input className="absolute top-[2.28rem]" type="date" id="start" name="trip-start"  min="2018-01-01" max="2018-12-31" />
+        
         <div className="absolute top-[0rem] left-[0rem] inline-block w-[4.25rem]">
           Return Date
         </div>
         <div className="absolute top-[1.33rem] left-[0rem] rounded-8xs box-border w-[7.02rem] h-[3.06rem] border-[1px] border-solid border-d6e701" />
-        <img
-          className="absolute top-[2.25rem] left-[0.59rem] w-[1.16rem] h-[1.11rem] overflow-hidden"
-          alt=""
-          src="/bxcalendar.svg"
-        />
+  
       </div>
       <div className="absolute top-[14.63rem] left-[53.37rem] w-[7.02rem] h-[4.39rem]">
-        <b className="absolute top-[1.72rem] left-[2.13rem] inline-block w-[4.48rem]">
-          13 Sep 22
-        </b>
-        <div className="absolute top-[2.83rem] left-[2.13rem] text-[0.67rem] leading-[1.11rem] font-text-14-reg text-d6e70 inline-block w-[2.79rem]">
-          Tuesday
-        </div>
+      
         <div className="absolute top-[0rem] left-[0rem] inline-block w-[5.88rem]">
           Journey Date
         </div>
@@ -281,15 +296,16 @@ const BookingMerchantFlightFare = () => {
           className="bg-[transparent] absolute top-[1.33rem] left-[0rem] rounded-8xs box-border w-[7.02rem] h-[3.06rem] border-[1px] border-solid border-d6e701"
           type="date"
         />
-        <img
+        {/* <img
           className="absolute top-[2.25rem] left-[0.56rem] w-[1.16rem] h-[1.11rem] overflow-hidden"
           alt=""
           src="/bxcalendar1.svg"
-        />
+        /> */}
       </div>
       <div className="absolute top-[11.91rem] left-[39.52rem] w-[27.67rem] h-[1.39rem] text-[0.89rem] font-text-14-reg">
+        <div>
         <b className="absolute top-[0.17rem] left-[1.89rem]">One Way</b>
-        <b className="absolute top-[0.17rem] left-[11.94rem]">Round Way</b>
+        <b  className="absolute top-[0.17rem] left-[11.94rem]">Round Way</b>
         <b className="absolute top-[0.17rem] left-[23.44rem]">Multi City</b>
         <img
           className="absolute top-[0rem] left-[0rem] w-[1.33rem] h-[1.33rem] overflow-hidden"
@@ -312,50 +328,73 @@ const BookingMerchantFlightFare = () => {
         alt=""
         src="/group-10526.svg"
       />
-      <div className="absolute top-[9.98rem] left-[16.5rem] box-border w-[4.42rem] h-[0.17rem] border-t-[3px] border-solid border-e94" />
+     </div>
+      {/* <div className="absolute top-[9.98rem] left-[16.5rem] box-border w-[4.42rem] h-[0.17rem] border-t-[3px] hover:border-solid hover:border-e94" /> */}
+      
       <div className="absolute top-[20.38rem] left-[20.83rem] w-[15.19rem] h-[3.83rem] text-[0.89rem]">
-        <div className="absolute top-[0rem] left-[0rem]">Country</div>
-        <div className="absolute top-[1.61rem] left-[0rem] w-[15.19rem] h-[2.22rem] text-[0.78rem]">
+        <label className="absolute top-[0rem] left-[0rem]">Country</label>
+         <div className="absolute top-[1.61rem] left-[0rem] w-[15.19rem] h-[2.22rem] text-[0.78rem]"> 
           <div className="absolute top-[0rem] left-[0rem] rounded-8xs box-border w-[15.19rem] h-[2.22rem] border-[1px] border-solid border-d6e701" />
+          
           <div className="absolute top-[0.5rem] left-[0.56rem] w-[14.19rem] h-[1.17rem]">
-            <b className="absolute top-[0rem] left-[0rem]">Select Country</b>
-            <img
+            {/* <b className="absolute top-[0rem] left-[0rem]">Select Country</b> */}
+            {/* <label className="absolute top-[0rem] left-[0rem]" for="country">Country</label> */}
+        <select className="outline-0" id="country" name="country">
+        <option value="australia">Select Country</option>
+         <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+       </select>
+            {/* <img
               className="absolute top-[0.06rem] left-[13.08rem] w-[1.11rem] h-[1.11rem]"
               alt=""
               src="/down-arrow.svg"
-            />
+            /> */}
           </div>
         </div>
       </div>
       <div className="absolute top-[20.38rem] left-[37.13rem] w-[15.17rem] h-[3.83rem] text-[0.89rem] font-text-14-reg">
-        <div className="absolute top-[0rem] left-[0rem] leading-[1.33rem]">
+        <label className="absolute top-[0rem] left-[0rem] leading-[1.33rem]">
           Airport
-        </div>
+        </label>
         <div className="absolute top-[1.61rem] left-[0rem] rounded-8xs box-border w-[15.17rem] h-[2.22rem] border-[1px] border-solid border-d6e701" />
         <div className="absolute top-[2.11rem] left-[0.59rem] w-[14.14rem] h-[1.17rem] text-[0.78rem] font-reg">
-          <b className="absolute top-[0rem] left-[0rem]">Select Airport</b>
-          <img
+          {/* <b className="absolute top-[0rem] left-[0rem]">Select Airport</b> */}
+          <select className="outline-0 " id="country" name="country">
+        <option  value="australia">Select Airport</option>
+        <option value="australia">Sydney Airport</option>
+        <option value="canada">Toronto Pearson Airport</option>
+         <option value="usa">Los Angeles  Airport</option>
+        </select>
+
+          {/* <img
             className="absolute top-[0.06rem] left-[13.03rem] w-[1.11rem] h-[1.11rem]"
             alt=""
             src="/down-arrow1.svg"
-          />
+          /> */}
         </div>
       </div>
       <div className="absolute top-[20.38rem] left-[53.33rem] w-[15.17rem] h-[3.83rem] text-[0.89rem] font-text-14-reg">
         <div className="absolute top-[0rem] left-[0rem] leading-[1.33rem]">
           Fare Type
-        </div>
-        <input
+        </div>       
+        <div
           className="bg-[transparent] absolute top-[1.61rem] left-[0rem] rounded-8xs box-border w-[15.17rem] h-[2.22rem] border-[1px] border-solid border-d6e701"
-          type="text"
+          
         />
         <div className="absolute top-[2.11rem] left-[0.59rem] w-[14.16rem] h-[1.17rem] text-[0.78rem] font-reg">
-          <b className="absolute top-[0rem] left-[0rem]">Select Fare Type</b>
-          <img
+          {/* <b className="absolute top-[0rem] left-[0rem]">Select Fare Type</b> */}
+          {/* <img
             className="absolute top-[0.06rem] left-[13.05rem] w-[1.11rem] h-[1.11rem]"
             alt=""
             src="/down-arrow2.svg"
-          />
+          /> */}
+           <select className="outline-0 " id="country" name="country">
+         <option  value="australia">Select Fare Type</option>
+         <option  value="australia">x</option>
+          <option value="australia">y</option>
+          <option value="canada">z</option>
+        </select>
+
         </div>
       </div>
       <div className="absolute top-[14.63rem] left-[69.61rem] w-[16.22rem] h-[9.58rem]">
@@ -470,9 +509,14 @@ const BookingMerchantFlightFare = () => {
           <div className="absolute top-[5.38rem] left-[1.1rem] box-border w-[14.03rem] h-[0.03rem] border-t-[0.5px] border-solid border-cdcfd3" />
         </div>
       </div>
-      <div className="absolute top-[35.08rem] left-[16.11rem] bg-azure shadow-[0px_2px_4px_rgba(0,_0,_0,_0.1)] w-[19.89rem] h-[3.89rem]" />
-      <div className="absolute top-[35.08rem] left-[36rem] bg-ffffff w-[19.89rem] h-[3.89rem]" />
-      <div className="absolute top-[35.08rem] left-[55.9rem] bg-ffffff w-[20.02rem] h-[3.89rem]" />
+
+      {/* main part-01 end here */}
+      
+      {/* main part-02 start from here */}
+
+      <div className="absolute top-[35.08rem] left-[16.11rem] hover:bg-azure hover:shadow-[0px_2px_4px_rgba(0,_0,_0,_0.1)] bg-ffffff w-[19.89rem] h-[3.89rem]" />
+      <div className="absolute top-[35.08rem] left-[36rem] hover:bg-azure hover:shadow-[0px_2px_4px_rgba(0,_0,_0,_0.1)] bg-ffffff w-[19.89rem] h-[3.89rem]" />
+      <div className="absolute top-[35.08rem] left-[55.9rem] hover:bg-azure hover:shadow-[0px_2px_4px_rgba(0,_0,_0,_0.1)] bg-ffffff w-[20.02rem] h-[3.89rem]" />
       <div className="absolute top-[35.91rem] left-[61.88rem] w-[8.06rem] h-[2.21rem] text-[0.89rem] font-text-14-reg">
         <div className="absolute top-[0rem] left-[1.89rem]">
           Earliest Flights
@@ -513,11 +557,11 @@ const BookingMerchantFlightFare = () => {
         />
       </div>
       <div className="absolute top-[30.63rem] left-[16.11rem] w-[59.81rem] h-[3.89rem] text-[0.67rem] text-d6e70 font-text-14-reg">
-        <div className="absolute top-[0rem] left-[0rem] rounded-8xs bg-ffffff w-[59.81rem] h-[3.89rem]" />
-        <div className="absolute top-[0rem] left-[16.65rem] bg-ffffff w-[13.29rem] h-[3.89rem]" />
-        <div className="absolute top-[0rem] left-[3.36rem] bg-lavender shadow-[0px_2px_4px_rgba(0,_0,_0,_0.1)] w-[13.29rem] h-[3.89rem]" />
-        <div className="absolute top-[0rem] left-[29.94rem] bg-ffffff w-[13.29rem] h-[3.89rem]" />
-        <div className="absolute top-[0rem] left-[43.23rem] bg-ffffff w-[13.29rem] h-[3.89rem]" />
+        <div className="absolute top-[0rem] left-[0rem] rounded-8xs hover:bg-lavender hover:shadow-[0px_2px_4px_rgba(0,_0,_0,_0.1)] bg-ffffff w-[59.81rem] h-[3.89rem]" />
+        <div className="absolute top-[0rem] left-[16.65rem] hover:bg-lavender hover:shadow-[0px_2px_4px_rgba(0,_0,_0,_0.1)] bg-ffffff w-[13.29rem] h-[3.89rem]" />
+        <div className="absolute top-[0rem] left-[3.36rem] hover:bg-lavender hover:shadow-[0px_2px_4px_rgba(0,_0,_0,_0.1)]  w-[13.29rem] h-[3.89rem]" />
+        <div className="absolute top-[0rem] left-[29.94rem] hover:bg-lavender hover:shadow-[0px_2px_4px_rgba(0,_0,_0,_0.1)] bg-ffffff w-[13.29rem] h-[3.89rem]" />
+        <div className="absolute top-[0rem] left-[43.23rem] hover:bg-lavender hover:shadow-[0px_2px_4px_rgba(0,_0,_0,_0.1)] bg-ffffff w-[13.29rem] h-[3.89rem]" />
         <div className="absolute top-[0.39rem] left-[5.14rem] w-[9.88rem] h-[3.11rem]">
           <div className="absolute top-[1.83rem] left-[6.19rem] leading-[1.11rem] inline-block w-[3.69rem]">
             35 Flights
@@ -531,7 +575,7 @@ const BookingMerchantFlightFare = () => {
             src="/mask-group2@2x.png"
           />
         </div>
-        <div className="absolute top-[0.39rem] left-[44.93rem] w-[9.88rem] h-[3.11rem]">
+        <div className="absolute top-[0.39rem] left-[44.93rem]  w-[9.88rem] h-[3.11rem]">
           <div className="absolute top-[1.83rem] left-[6.19rem] leading-[1.11rem] inline-block w-[3.69rem]">
             35 Flights
           </div>
@@ -570,6 +614,11 @@ const BookingMerchantFlightFare = () => {
             src="/mask-group5@2x.png"
           />
         </div>
+       
+     
+       {/* end */}
+
+
         <div className="absolute top-[-0.03rem] left-[3.27rem] box-border w-[0.06rem] h-[3.94rem] border-r-[1px] border-solid border-e7e7e7" />
         <div className="absolute top-[-0.03rem] left-[56.49rem] box-border w-[0.06rem] h-[3.94rem] border-r-[1px] border-solid border-e7e7e7" />
         <div className="absolute top-[-0.03rem] left-[43.2rem] box-border w-[0.06rem] h-[3.94rem] border-r-[1px] border-solid border-e7e7e7" />
@@ -602,7 +651,12 @@ const BookingMerchantFlightFare = () => {
           alt=""
           src="/pngtransparentbimanairlinesclassichdlogo-1@2x.png"
         />
-      </div>
+       </div>
+    
+
+   
+
+
       <div className="absolute top-[68.41rem] left-[16.15rem] w-[59.64rem] h-[64.98rem] text-[0.89rem] font-text-14-reg">
         <div className="absolute top-[0rem] left-[0.02rem] rounded-3xs bg-ffffff w-[59.62rem] h-[64.98rem]" />
         <div className="absolute top-[0rem] left-[41.91rem] rounded-tl-none rounded-tr-3xs rounded-b-none bg-bar-color w-[17.73rem] h-[9.83rem] opacity-[0.1]" />
@@ -611,6 +665,7 @@ const BookingMerchantFlightFare = () => {
           alt=""
           src="/mask-group6@2x.png"
         />
+         
         <button className="cursor-pointer [border:none] p-0 bg-bar-color absolute top-[6.33rem] left-[43.23rem] rounded-[29px] w-[15.1rem] h-[2.5rem]" />
         <div className="absolute top-[1.11rem] left-[1.33rem] rounded-[30px] bg-e94 w-[3.81rem] h-[1.39rem]" />
         <div className="absolute top-[1.11rem] left-[6.45rem] rounded-8xl bg-bar-color w-[10.42rem] h-[1.39rem]" />
@@ -624,9 +679,9 @@ const BookingMerchantFlightFare = () => {
         <div className="absolute top-[1.31rem] left-[7.37rem] text-[0.78rem] text-ffffff inline-block w-[8.73rem]">
           Partially Refundable
         </div>
-        <div className="absolute top-[10.83rem] left-[1.86rem] text-a30cf inline-block w-[6.5rem]">
+        <button  className="bg-ffffff absolute top-[10.83rem] left-[1.86rem] text-a30cf inline-block w-[6.5rem]">
           Flight Details
-        </div>
+        </button>
         <div className="absolute top-[13.46rem] left-[34.51rem] inline-block w-[7.22rem]">
           Fare Summary
         </div>
@@ -736,7 +791,7 @@ const BookingMerchantFlightFare = () => {
         <div className="absolute top-[3.44rem] left-[46.97rem] text-[1.11rem] font-semibold text-bar-color text-center inline-block w-[7.62rem]">
           BDT 50,550
         </div>
-        <div className="absolute top-[6.94rem] left-[48.68rem] text-[1.11rem] font-semibold text-ffffff text-center inline-block w-[4.07rem]">
+        <div className="transition duration-500 hover:scale-125 absolute top-[6.94rem] left-[48.68rem] text-[1.11rem] font-semibold text-ffffff text-center inline-block w-[4.07rem]">
           Select
         </div>
         <div className="absolute top-[1.33rem] left-[2.25rem] text-[0.78rem] text-ffffff inline-block w-[1.97rem]">
@@ -950,9 +1005,9 @@ const BookingMerchantFlightFare = () => {
         <div className="absolute top-[0rem] left-[0rem] w-[12.94rem] h-[100.1rem]">
           <div className="absolute top-[0rem] left-[0rem] rounded-8xs bg-ffffff box-border w-[12.94rem] h-[100.1rem] border-[1px] border-solid border-e7e7e7" />
           <div className="absolute top-[1.11rem] left-[0.58rem] inline-block w-[4.95rem]">{`Sort & Filter`}</div>
-          <div className="absolute top-[1.11rem] left-[7.44rem] text-bar-color text-right inline-block w-[4.95rem]">
+          <button className=" bg-ffffff absolute top-[1.11rem] left-[7.44rem] text-bar-color text-right inline-block w-[4.95rem]">
             RESET
-          </div>
+          </button>
           <div className="absolute top-[2.58rem] left-[0.03rem] box-border w-[12.94rem] h-[0.06rem] border-t-[1px] border-solid border-cdcfd3" />
           <div className="absolute top-[4.64rem] left-[0.39rem] box-border w-[12.22rem] h-[0.06rem] border-t-[1px] border-solid border-cdcfd3" />
           <b className="absolute top-[3.44rem] left-[0.64rem]">
@@ -1081,10 +1136,13 @@ const BookingMerchantFlightFare = () => {
             <div className="absolute top-[1.19rem] left-[-0.03rem] box-border w-[11.83rem] h-[0.06rem] border-t-[1px] border-solid border-cdcfd3" />
             <b className="absolute top-[0rem] left-[0.03rem]">Airlines</b>
             <div className="absolute top-[1.78rem] left-[0rem] w-[11.78rem] h-[1.94rem] text-cdcfd3">
-              <button className="cursor-pointer p-0 bg-[transparent] absolute top-[0rem] left-[0rem] rounded-md box-border w-[11.78rem] h-[1.94rem] border-[1px] border-solid border-cdcfd3" />
-              <div className="absolute top-[0.5rem] left-[2.78rem]">
+              <div className="cursor-pointer p-0 bg-[transparent] absolute top-[0rem] left-[0rem] rounded-md box-border w-[11.78rem] h-[1.94rem] border-[1px] border-solid border-cdcfd3" />
+              
+              {/* <div className="absolute top-[0.5rem] left-[2.78rem]">
                 Search Airlines
-              </div>
+              </div> */}
+              <input className="outline-0  absolute top-[0.5rem] left-[2.5rem]  w-[8rem] " type="search" placeholder="Search Airlines" />
+              
               <img
                 className="absolute top-[0.44rem] left-[0.67rem] w-[1.11rem] h-[1.11rem]"
                 alt=""
@@ -1130,10 +1188,13 @@ const BookingMerchantFlightFare = () => {
             <div className="absolute top-[0rem] left-[0rem] w-[11.78rem] h-[3.72rem]">
               <div className="absolute top-[1.19rem] left-[-0.03rem] box-border w-[11.83rem] h-[0.06rem] border-t-[1px] border-solid border-cdcfd3" />
               <b className="absolute top-[0rem] left-[0.03rem]">Aircraft</b>
-              <button className="cursor-pointer p-0 bg-[transparent] absolute top-[1.78rem] left-[0rem] rounded-md box-border w-[11.78rem] h-[1.94rem] border-[1px] border-solid border-cdcfd3" />
-              <div className="absolute top-[2.28rem] left-[2.78rem] text-cdcfd3">
+              <div className="cursor-pointer p-0 bg-[transparent] absolute top-[1.78rem] left-[0rem] rounded-md box-border w-[11.78rem] h-[1.94rem] border-[1px] border-solid border-cdcfd3" />
+              {/* <div className="absolute top-[2.28rem] left-[2.78rem] text-cdcfd3">
                 Search Airlines
-              </div>
+              </div> */}
+
+       <input className="outline-0 top-[2.22rem] absolute top-[0.5rem] left-[2.5rem]  w-[8rem] " type="search" placeholder="Search Airlines" />
+              
               <img
                 className="absolute top-[2.22rem] left-[0.67rem] w-[1.11rem] h-[1.11rem]"
                 alt=""
@@ -1320,12 +1381,12 @@ const BookingMerchantFlightFare = () => {
             </div>
           </div>
         </div>
-      </div>
-      <div className="absolute top-[13.92rem] left-[16.06rem] box-border w-[74.55rem] h-[0.06rem] border-t-[1px] border-solid border-cdcfd3" />
-      <b className="absolute top-[32.46rem] left-[84.57rem] text-[0.89rem] inline-block font-text-14-reg text-ffffff w-[1.23rem]">
+       </div>
+       <div className="absolute top-[13.92rem] left-[16.06rem] box-border w-[74.55rem] h-[0.06rem] border-t-[1px] border-solid border-cdcfd3" />
+       <b className="absolute top-[32.46rem] left-[84.57rem] text-[0.89rem] inline-block font-text-14-reg text-ffffff w-[1.23rem]">
         32
-      </b>
-      <div className="absolute top-[153.52rem] left-[0rem] w-[106.67rem] h-[24.11rem] text-ffffff">
+       </b>
+       <div className="absolute top-[153.52rem] left-[0rem] w-[106.67rem] h-[24.11rem] text-ffffff">
         <div className="absolute top-[0rem] left-[0rem] w-[106.67rem] h-[24.11rem]">
           <div className="absolute top-[0rem] left-[0rem] w-[106.67rem] h-[24.11rem]">
             <div className="absolute top-[0rem] left-[0rem] bg-darkslategray-200 w-[106.67rem] h-[24.11rem]" />
@@ -1337,10 +1398,8 @@ const BookingMerchantFlightFare = () => {
               <div className="absolute top-[0rem] left-[27.94rem] w-[10.41rem] h-[16.06rem]">
                 <div className="absolute top-[2.83rem] left-[0rem] leading-[1.67rem] inline-block w-[10.41rem] h-[13.22rem]">
                   <p className="m-0">About Us</p>
-                  <p className="m-0">{`Cancellation Returns & Refunds 
-`}</p>
-                  <p className="m-0">{`Terms & Conditions
-`}</p>
+                  <p className="m-0">{`Cancellation Returns & Refunds`}</p>
+                  <p className="m-0">{`Terms & Conditions`}</p>
                   <p className="m-0">jachai Career Club</p>
                   <p className="m-0">Privacy Policy</p>
                 </div>
@@ -1352,8 +1411,7 @@ const BookingMerchantFlightFare = () => {
                 <div className="absolute top-[2.83rem] left-[0rem] leading-[1.67rem] inline-block w-[8.94rem] h-[13.22rem]">
                   <p className="m-0">{`Order & Booking Process`}</p>
                   <p className="m-0">Campaign Update</p>
-                  <p className="m-0">{`News & Events
-`}</p>
+                  <p className="m-0">{`News & Events`}</p>
                   <p className="m-0">{`Support & Helpline`}</p>
                 </div>
                 <b className="absolute top-[0rem] left-[0rem] text-[1.11rem]">
@@ -1610,9 +1668,9 @@ const BookingMerchantFlightFare = () => {
               <div className="absolute top-[1.31rem] left-[7.36rem] text-ffffff inline-block w-[8.74rem]">
                 Partially Refundable
               </div>
-              <div className="absolute top-[10.83rem] left-[2.5rem] text-[0.89rem] text-a30cf inline-block w-[6.51rem]">
+              <button className="bg-ffffff absolute top-[10.83rem] left-[2.5rem] text-[0.89rem] text-a30cf inline-block w-[6.51rem]">
                 Flight Details
-              </div>
+              </button>
               <b className="absolute top-[4.44rem] left-[22.48rem] text-[0.89rem] inline-block w-[3.35rem]">
                 11 : 00
               </b>
@@ -1628,7 +1686,7 @@ const BookingMerchantFlightFare = () => {
               <div className="absolute top-[3.44rem] left-[47.27rem] text-[1.11rem] font-semibold text-bar-color text-right inline-block w-[6.51rem]">
                 BDT 9,515
               </div>
-              <div className="absolute top-[6.94rem] left-[48.7rem] text-[1.11rem] font-semibold text-ffffff text-center inline-block w-[4.07rem]">
+              <div className="transition duration-500 hover:scale-125 absolute top-[6.94rem] left-[48.7rem] text-[1.11rem] font-semibold text-ffffff text-center inline-block w-[4.07rem]">
                 Select
               </div>
               <div className="absolute top-[1.33rem] left-[2.23rem] text-ffffff inline-block w-[1.97rem]">
@@ -1689,9 +1747,9 @@ const BookingMerchantFlightFare = () => {
               <div className="absolute top-[1.31rem] left-[7.36rem] text-ffffff inline-block w-[8.74rem]">
                 Partially Refundable
               </div>
-              <div className="absolute top-[10.83rem] left-[2.5rem] text-[0.89rem] text-a30cf inline-block w-[6.51rem]">
+              <button className="bg-ffffff absolute top-[10.83rem] left-[2.5rem] text-[0.89rem] text-a30cf inline-block w-[6.51rem]">
                 Flight Details
-              </div>
+              </button>
               <b className="absolute top-[4.44rem] left-[22.48rem] text-[0.89rem] inline-block w-[3.35rem]">
                 11 : 00
               </b>
@@ -1707,7 +1765,7 @@ const BookingMerchantFlightFare = () => {
               <div className="absolute top-[3.44rem] left-[47.55rem] text-[1.11rem] font-semibold text-bar-color text-center inline-block w-[6.51rem]">
                 BDT 9,515
               </div>
-              <div className="absolute top-[6.94rem] left-[48.7rem] text-[1.11rem] font-semibold text-ffffff text-center inline-block w-[4.07rem]">
+              <div className="transition duration-500 hover:scale-125 absolute top-[6.94rem] left-[48.7rem] text-[1.11rem] font-semibold text-ffffff text-center inline-block w-[4.07rem]">
                 Select
               </div>
               <div className="absolute top-[1.33rem] left-[2.23rem] text-ffffff inline-block w-[1.97rem]">
@@ -1758,8 +1816,8 @@ const BookingMerchantFlightFare = () => {
         <div className="absolute top-[0rem] left-[13.91rem] inline-block w-[4.86rem]">
           24 Jun 2023
         </div>
+        </div>
       </div>
-    </div>
   );
 };
 
