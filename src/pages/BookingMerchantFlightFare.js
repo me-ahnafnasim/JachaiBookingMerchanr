@@ -227,7 +227,7 @@ const BookingMerchantFlightFare = () => {
         alt=""
         src="/mask-group1.svg"
       />
-
+   
 
       {/* main part-1 start from here*/}
 
@@ -296,11 +296,7 @@ const BookingMerchantFlightFare = () => {
           className="bg-[transparent] absolute top-[1.33rem] left-[0rem] rounded-8xs box-border w-[7.02rem] h-[3.06rem] border-[1px] border-solid border-d6e701"
           type="date"
         />
-        {/* <img
-          className="absolute top-[2.25rem] left-[0.56rem] w-[1.16rem] h-[1.11rem] overflow-hidden"
-          alt=""
-          src="/bxcalendar1.svg"
-        /> */}
+      
       </div>
       <div className="absolute top-[11.91rem] left-[39.52rem] w-[27.67rem] h-[1.39rem] text-[0.89rem] font-text-14-reg">
         <div>
